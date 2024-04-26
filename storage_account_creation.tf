@@ -1,7 +1,7 @@
 #This is an Azure Montreal College Information Technology - Lab Session
 
 resource "azurerm_resource_group" "azureresourcegroup" {
-  name     = "MCIT_lab_session"
+  name     = "beststorageaccountworldbest"
   location = "Canada Central"
 }
 resource "azurerm_storage_account" "azurermmcitcountexample" {
