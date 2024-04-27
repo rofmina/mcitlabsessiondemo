@@ -1,7 +1,7 @@
 locals{
   servicename="abracadabra"
   forum="abracadabramcit"
-  first_name="Mina
+  first_name="Mina"
   last_name="Rofail"
   city="laval"
 }
