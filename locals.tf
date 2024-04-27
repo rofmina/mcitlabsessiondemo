@@ -13,7 +13,7 @@ output "secondprint"{
 }
 
 output "printfirst_name"{
-    value = first_name
+    value = local.first_name
 }
 output "printlast_name"{
     value = local.last_name
