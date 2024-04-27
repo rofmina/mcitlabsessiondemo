@@ -4,6 +4,9 @@ locals{
   first_name="Mina"
   last_name="Rofail"
   city="laval"
+  lengthfirstname=length(local.first_name)
+  lengthlastname=length(local.last_name)
+  
 }
 output "print"{
     value = local.servicename
@@ -20,4 +23,11 @@ output "printlast_name"{
 }
 output "printcity"{
     value = local.city
+}
+
+output "lengthfirstnameoutput"{
+    value = local.lengthfirstname
+}
+output "lenthlastnameoutput"{
+    value = local.lengthlastname
 }
