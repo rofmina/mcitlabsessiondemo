@@ -18,5 +18,5 @@ output "printfirst_name"{
 output "printlast_name"{
     value = local.last_name
 }
-output "printcity"{
+output "city"{
     value = local.city
