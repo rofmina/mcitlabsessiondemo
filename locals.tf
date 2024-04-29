@@ -1,6 +1,6 @@
 locals{
-  servicename="abracadabra"
-  forum="abracadabramcit"
+  servicename="Montreal"
+  forum="Sin City"
   first_name="Mina"
   last_name="Rofail"
   city="laval"
