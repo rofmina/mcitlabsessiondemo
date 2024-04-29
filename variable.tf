@@ -70,7 +70,6 @@ output "years_of_establishment_output"{
 value = var.years_of_establishment
 }
 
-output "ifelsecheck_output"{ value = var.ifelsecheck
-
+output "ifelsecheck_output"{value=var.ifelsecheck
 }
 
