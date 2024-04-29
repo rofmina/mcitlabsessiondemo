@@ -1,6 +1,6 @@
 locals{
   servicename="Montreal"
-  forum="Sin City"
+  forum="SinCity"
   first_name="Mina"
   last_name="Rofail"
   city="laval"
