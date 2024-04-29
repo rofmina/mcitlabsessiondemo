@@ -1,6 +1,6 @@
 locals{
 servicename="abracadabra"
-forum "abracadabramcit"
+forum="abracadabramcit"
 lengthsa-length(local.servicename)
 character_enemy_map (for index, character in local.characters: #Convert charact
 lengthforum-length(local.forum)
