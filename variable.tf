@@ -59,6 +59,7 @@ variable "lifeseheck"{
  type=bool
  default=true
 }
+
 output "company_name_output"{
 
 value=var.company_name
@@ -70,6 +71,8 @@ output "years_of_establishment_output"{
 value = var.years_of_establishment
 }
 
-output "ifelsecheck_output"{value=var.lifelsecheck
+output "ifelsecheck_output"
+{
+value=var.lifeseheck
 }
 
