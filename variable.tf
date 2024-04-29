@@ -71,8 +71,7 @@ output "years_of_establishment_output"{
 value = var.years_of_establishment
 }
 
-output "ifelsecheck_output"
-{
+output "ifelsecheck_output"{
 value=var.lifeseheck
 }
 
