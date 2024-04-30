@@ -78,7 +78,7 @@ value=var.lifeseheck
 
 variable "Shity_island"{
 type =list(string)
-default=["down_town","st.cathrin","st.loran","st.dennis","clarck"]
+default=["down_town_streets","st.cathrin","st.lauran","st.dennis","clarck"]
 }
 output "Shity_islandlist"{
 value=[for Shity_island in var.Shity_island:Shity_island]
