@@ -91,3 +91,8 @@ default=["soccer","basketball","badminton","tabletennis"]
 output "summersportslist"{
 value=[for summersport in var.summersports:summersport ]
 }
+
+total_output = ["150", "150", "150"]
+output "sumofthreenumbers"{
+  value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
+}
