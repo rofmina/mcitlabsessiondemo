@@ -81,7 +81,7 @@ type =list(string)
 default=["down_town","st.cathrin","st.loran","st.dennis","clarck"]
 }
 output "Shity_islandlist"{
-value=[for Shity_island in var.summersports:summersport ]
+value=[for Shity_island in var.Shity_island:Shity_island]
 }
 
 variable "summersports"{
