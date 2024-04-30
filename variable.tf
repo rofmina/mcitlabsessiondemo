@@ -75,3 +75,9 @@ output "ifelsecheck_output"{
 value=var.lifeseheck
 }
 
+variable "summersports"{
+type =list(string)
+default=["soccer","basketball","badminton","tabletennis"]
+}
+output "summersportslist"{value=[for summersport in var.summersports:summersport ]
+}
