@@ -33,6 +33,7 @@ variable "account_tier"{
 }
 variable "myname"{
   type=string
+ default="Mina"
 }
 variable "account_replication_type"{
   type=string
