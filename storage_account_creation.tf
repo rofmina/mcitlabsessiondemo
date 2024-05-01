@@ -1,5 +1,5 @@
 #This is an Azure Montreal College Information Technology - Lab Session
-
+*
 resource "azurerm_resource_group" "azureresourcegroup" {
   name     = "MCIT_Lab_session"
   location = "Canada Central"
