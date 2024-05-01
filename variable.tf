@@ -63,3 +63,11 @@ variable "summersports"{
     type =list(string)
     default=["soccer","basketball","badminton","tabletennis"]
 }
+variable "firstname"{
+ type=string
+ default="mina"
+}
+variable "lastname"{
+ type=string
+ default="rofail"
+}
