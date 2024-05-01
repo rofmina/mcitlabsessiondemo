@@ -39,7 +39,7 @@ output "substring_example" {
 
 # Function 7: Split the string by space into a list
 output "split_example" {
-  value = split("", var.original_string)
+  value = split(" ", var.original_string)
 }
 
 # Function 8: Join a list of strings into a single string with a separator
