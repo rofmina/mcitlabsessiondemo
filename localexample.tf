@@ -59,12 +59,13 @@ output "winter_sports_message" {
 locals {
   clouds = ["azure", "aws", "gcp"]
   cloud_owners = ["Microsoft", "Amazon", "Google"]
+}
   type = map { 
    azure = "Microsoft"
    aws = "Amazon"
    gcp = ""Google""
 
-  }
+
 }
 
 output "azure_check" {
