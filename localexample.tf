@@ -54,23 +54,12 @@ output "winter_sports_message" {
   value = local.winter_sports_message
 }
 
-variable "clouds" {
-  default = ["azure", "aws", "gcp", "alibaba", "ibm"]
-}
-
-locals {
-  cloud_list_contains_azure = contains(var.clouds, "azure")
-}
-
-output "azure_check" {
-  value = local.cloud_list_contains_azure ? "azure is part of the cloud list" : "azure is not part of the cloud list"
-}
 
 
 locals {
   clouds = ["azure", "aws", "gcp"]
   cloud_owners = ["Microsoft", "Amazon", "Google"]
-  type=map { 
+  type = map { 
    azure = "Microsoft"
    aws = "Amazon"
    gcp = ""Google""
