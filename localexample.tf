@@ -53,3 +53,16 @@ output "incremented_output_show" {
 output "winter_sports_message" {
   value = local.winter_sports_message
 }
+
+variable "clouds" {
+  default = ["azure", "aws", "gcp"]
+}
+
+locals {
+  cloud_list_contains_azure = contains(var.clouds, "azure")
+}
+
+output "azure_check" {
+  value = local.cloud_list_contains_azure ? "azure is part of the cloud list" : "azure is not part of the cloud list"
+}
+
