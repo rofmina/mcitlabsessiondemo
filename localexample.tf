@@ -55,7 +55,7 @@ output "winter_sports_message" {
 }
 
 variable "clouds" {
-  default = ["azure", "aws", "gcp"]
+  default = ["azure", "aws", "gcp", "alibaba", "ibm"]
 }
 
 locals {
