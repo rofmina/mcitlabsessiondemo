@@ -54,22 +54,16 @@ output "winter_sports_message" {
   value = local.winter_sports_message
 }
 
-
 locals {
-  clouds = ["azure", "aws", "gcp"]
-  cloud_owners = ["Microsoft", "Amazon", "Google"]
-  type=string​
-map(
-    azure = "Microsoft",
-    aws = "Amazon",
-    gcp = "Google"
-  )
+  nested_list = [[1,2,3],[1,2],[1,2,3,4],[1,2,3,4,5]]
+  flattened_list = flatten(local.nested_list)
+  sum_of_flattened_list = sum(local.flattened_list)
 }
 
-output "azure_check" {
-  value = contains(local.clouds, "azure") ? "azure is part of the cloud list" : "azure is not part of the cloud list"
+output "flattened_list" {
+  value = local.flattened_list
 }
 
-output "cloud_owner_mapping" {
-  value = local.type
+output "sum_of_flattened_list" {
+  value = local.sum_of_flattened_list
 }
