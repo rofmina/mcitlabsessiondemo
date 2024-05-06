@@ -68,10 +68,21 @@ output "azure_check" {
 
 
 locals {
-  cloud_list_contains_aws = contains(var.clouds, "aws")
+  clouds = ["azure", "aws", "gcp"]
+  cloud_owners = ["Microsoft", "Amazon", "Google"]
+  type=map { 
+   azure = "Microsoft"
+   aws = "Amazon"
+   gcp = ""Google""
+
+  }
 }
 
-output "aws_check" {
-  value = local.cloud_list_contains_aws ? "aws is part of the cloud list" : "aws is not part of the cloud list"
+output "azure_check" {
+  value = contains(local.clouds, "azure") ? "azure is part of the cloud list" : "azure is not part of the cloud list"
+}
+
+output "cloud_owner_mapping" {
+  value = local.cloud_owner_map
 }
 
