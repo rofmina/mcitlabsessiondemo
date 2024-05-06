@@ -55,17 +55,15 @@ output "winter_sports_message" {
 }
 
 
-
 locals {
   clouds = ["azure", "aws", "gcp"]
   cloud_owners = ["Microsoft", "Amazon", "Google"]
-}
-  type = map { 
-   azure = "Microsoft"
-   aws = "Amazon"
-   gcp = ""Google""
 
-
+  type = map(
+    azure = "Microsoft",
+    aws = "Amazon",
+    gcp = "Google"
+  )
 }
 
 output "azure_check" {
@@ -73,6 +71,5 @@ output "azure_check" {
 }
 
 output "cloud_owner_mapping" {
-  value = local.cloud_owner_map
+  value = local.type
 }
-
