@@ -53,17 +53,21 @@ output "incremented_output_show" {
 output "winter_sports_message" {
   value = local.winter_sports_message
 }
-
 locals {
-  nested_list = [[1,2,3],[1,2],[1,2,3,4],[1,2,3,4,5]]
-  flattened_list = flatten(local.nested_list)
-  sum_of_flattened_list = sum(local.flattened_list)
+  data = [[1, 2, 3], [1, 2], [1, 2, 3, 4], [1, 2, 3, 4, 5]]
+  flat_list = []
+
+  for item in local.data :
+    for num in item :
+      local.flat_list = concat(local.flat_list, [num])
+
+  sum = length(local.flat_list) # Assuming you want the sum of the elements
 }
 
 output "flattened_list" {
-  value = local.flattened_list
+  value = local.flat_list
 }
 
 output "sum_of_flattened_list" {
-  value = local.sum_of_flattened_list
+  value = local.sum
 }
