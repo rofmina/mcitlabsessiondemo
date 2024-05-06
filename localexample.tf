@@ -66,3 +66,12 @@ output "azure_check" {
   value = local.cloud_list_contains_azure ? "azure is part of the cloud list" : "azure is not part of the cloud list"
 }
 
+
+locals {
+  cloud_list_contains_aws = contains(var.clouds, "aws")
+}
+
+output "aws_check" {
+  value = local.cloud_list_contains_aws ? "aws is part of the cloud list" : "aws is not part of the cloud list"
+}
+
