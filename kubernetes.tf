@@ -1,6 +1,6 @@
 
 locals{ 
-  cluster_names=["mina1","k9batcha06","k10batcha06","k11batcha06","k12batcha06"]
+  cluster_names=["laval","montrael","stjulie","boucherville","stlambert"]
 }
 resource "azurerm_resource_group" "minaazureresourcegroup" {
   name     = "Mina_MCIT_resource_group"
