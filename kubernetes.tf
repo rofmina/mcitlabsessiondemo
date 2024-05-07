@@ -8,5 +8,5 @@ resource "azurerm_resource_group" "minaazureresourcegroup" {
 }
 resource "azurerm_resource_group" "minaazureresourcegroup2" {
   name     = "Mina2_MCIT_resource_group"
-  location = "Canada East"
+  location = "UAE Central"
 }
