@@ -38,7 +38,7 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
 
 
 
-resource "azurerm_kubernetes_cluster" "batchabcd" {
+resource "mmmm" {
   
   name                = "1111"
   location            = azurerm_resource_group.azureresourcegroup.location
@@ -57,6 +57,10 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
 
   tags = {
     Environment = "Production"
+
+
+  }
+}
 
 
 
