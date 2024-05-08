@@ -38,7 +38,7 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
 
 
 
-resource "mmmm" {
+resource  "azurerm_kubernetes_cluster" "mmmm" {
   
   name                = "1111"
   location            = azurerm_resource_group.azureresourcegroup.location
