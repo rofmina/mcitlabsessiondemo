@@ -31,6 +31,10 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
     Environment = "Production"
 
 
+  }
+}
+
+
 
 
 
@@ -58,7 +62,3 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
 
 
 
-
-
-  }
-}
